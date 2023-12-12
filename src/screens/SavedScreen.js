@@ -11,9 +11,7 @@ const SavedScreen = () => {
     return (
         <View style={styles.container}>
             <SavedHeader title="Saved"/>
-            <ScrollView>
-                <SavedList list={savedCards}></SavedList>
-            </ScrollView>
+            <SavedList list={savedCards}></SavedList>
         </View>
     );
 };

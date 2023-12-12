@@ -12,9 +12,7 @@ const SwipeScreen = () => {
     return (
         <View style={styles.container}>
             <MainHeader title="Lettr"/>
-            <ScrollView>
-                <CardList list={allCards}></CardList>
-            </ScrollView>
+            <CardList list={allCards}></CardList>
         </View>
     );
 };

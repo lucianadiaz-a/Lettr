@@ -29,7 +29,7 @@ const MainNavigator = () => {
           }}
         />
         <Stack.Screen
-          name="Swipe"
+          name="SwipeRoot"
           component={TabNavigator}
           options={{
             headerShown:false,

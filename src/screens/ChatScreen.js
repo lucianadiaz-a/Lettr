@@ -12,13 +12,9 @@ const ChatScreen = () => {
         <View>
             <MainHeader title='Chats'/>
             <Text style={styles.awaiting} >Awaiting Response</Text>
-            <ScrollView>
-                <AwaitingResponse list={previews}></AwaitingResponse>
-            </ScrollView>
+            <AwaitingResponse list={previews}></AwaitingResponse>
             <Text style={styles.matches}>Matches</Text>
-            <ScrollView>
-                <ChatList list={chats}></ChatList>
-            </ScrollView>
+            <ChatList list={chats}></ChatList>
         </View>
         </>
     );
