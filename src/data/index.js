@@ -115,7 +115,22 @@ export const listings = [
         subway: require('../../assets/images/subway1.png'),
         amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
         map: require('../../assets/images/map1.png'),
+      },
+      {
+        id: 9,
+        image1: require('../../assets/images/swipe9.png'),
+        address: '8th Ave & W 23rd St',
+        neighborhood: 'CHELSEA',
+        bed_bath: '2 bed : 2 bath',
+        price: '$3500/month',
+        profilepic: require('../../assets/images/profilepic1.png'),
+        date_range: 'June 30 - July 15',
+        host: 'Madeleine',
+        subway: require('../../assets/images/subway123.png'),
+        amenities: ['Wifi'],
+        map: require('../../assets/images/map9.png'),
       }
+
 ];
 
 export const previews = [
