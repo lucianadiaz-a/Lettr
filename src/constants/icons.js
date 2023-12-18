@@ -11,6 +11,7 @@ const Back = require('../../assets/icons/backArrow.png');
 const Close = require('../../assets/icons/close.png');
 const blackArrow = require('../../assets/icons/blackArrow.png');
 const blackPin = require('../../assets/icons/blackPin.png');
+const shareLink = require('../../assets/icons/shareLink.png');
 
 export default {
   Swipe,
@@ -25,5 +26,6 @@ export default {
   Back,
   Close,
   blackArrow,
-  blackPin
+  blackPin,
+  shareLink
 };
