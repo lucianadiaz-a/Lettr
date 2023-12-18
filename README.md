@@ -1,6 +1,6 @@
 # Lettr
 
-_Testing on a computer: please make sure you have X Code installed._ 
+_Testing on a computer: please make sure you have X Code installed._ <br />
 _Testing on an iPhone: please make sure you have the ExpoGo app installed._
 
 To preview and run the project on your device:
