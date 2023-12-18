@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Share } from 'react-native';
 import { spacing, colors } from '../constants/theme';
 import Icon from '../components/Icon';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -24,11 +24,36 @@ const closeModal = () => {
     setModalVisible(false);
 };
 
+const onShare = async () => {
+  try {
+    const result = await Share.share({
+      message: 'Check out this listing!',
+      url: 'https://lettr.com/aptListing', 
+      title: 'Listing Details',
+    });
+
+    if (result.action === Share.sharedAction) {
+      if (result.activityType) {
+        console.log(`Shared via activity type: ${result.activityType}`);
+      } else {
+        console.log('Listing shared successfully');
+      }
+    } else if (result.action === Share.dismissedAction) {
+        console.log('Sharing dismissed by the user');
+    }
+  } catch (error) {
+    console.error('Error sharing:', error.message);
+  }
+};
+
   return (
     <View style={styles.container}>
       <ScrollView>
         <View style={[styles.backButton, { marginTop: insets.top }]}>
           <Icon icon='blackArrow' onPress={navigation.goBack} />
+        </View>
+        <View style={[styles.shareButton, { marginTop: insets.top }]}>
+          <Icon icon='shareLink' onPress={onShare}/>
         </View>
         <View style={styles.imageBox}>
           <Image source={listing.image1} style={styles.image} />
@@ -91,6 +116,11 @@ const styles = StyleSheet.create({
   backButton: {
     position: 'absolute',
     left: spacing.l,
+    zIndex: 1,
+  },
+  shareButton: {
+    position: 'absolute',
+    left: 336,
     zIndex: 1,
   },
   imageBox: {
