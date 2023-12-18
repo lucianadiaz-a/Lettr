@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         left: 16,
     },
     address: {
-        fontSize: 31,
+        fontSize: 30,
         fontWeight: 'bold',
         color: colors.white,
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
