@@ -2,7 +2,7 @@ export const listings = [
     {
       id: 1,
       image1: require('../../assets/images/swipe1.png'),
-      //NO IMAGES EXIST 
+      //MULTI PICTURE FUNCTIONALITY NOT YET IMPLEMENTED
       image2: require('../../assets/images/swipe1_2.png'),
       image3: require('../../assets/images/swipe1_3.png'),
       image4: require('../../assets/images/swipe1_4.png'),
@@ -15,7 +15,7 @@ export const listings = [
       host: 'Julia',
       profilepic: require('../../assets/images/profilepic1.png'),
       subway: require('../../assets/images/subway1.png'),
-      amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+      amenities: ['Wifi Included', 'Gym', 'In-Unit Laundry', 'Parking'],
       map: require('../../assets/images/map1.png'),
     },
     {
@@ -29,7 +29,7 @@ export const listings = [
         host: 'Jack',
         profilepic: require('../../assets/images/profilepic2.png'),
         subway: require('../../assets/images/subway2.png'),
-        amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+        amenities: ['Elevator', 'Doorman'],
         map: require('../../assets/images/map2.png'),
     },
       {
@@ -41,9 +41,9 @@ export const listings = [
         price: '$2200/month',
         date_range: 'May 15 - August 30',
         host: 'Adina',
-        profilepic: require('../../assets/images/profilepic1.png'),
+        profilepic: require('../../assets/images/profilepic3.png'),
         subway: require('../../assets/images/subway1.png'),
-        amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+        amenities: ['Wifi Included', 'Rooftop Access', 'Gym'],
         map: require('../../assets/images/map1.png'),
       },
       {
@@ -55,9 +55,9 @@ export const listings = [
         price: '$2150/month',
         date_range: 'May 1 - September 1',
         host: 'Matt',
-        profilepic: require('../../assets/images/profilepic1.png'),
+        profilepic: require('../../assets/images/profilepic4.jpeg'),
         subway: require('../../assets/images/subway1.png'),
-        amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+        amenities: ['Elevator', 'Gym', 'Laundry (in Building)'],
         map: require('../../assets/images/map1.png'),
       },
       {
@@ -69,9 +69,9 @@ export const listings = [
         price: '$2100/month',
         date_range: 'April 1 - July 1',
         host: 'Max',
-        profilepic: require('../../assets/images/profilepic1.png'),
+        profilepic: require('../../assets/images/profilepic5.jpeg'),
         subway: require('../../assets/images/subway1.png'),
-        amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+        amenities: ['Wifi Included', 'Gym', 'Elevator', 'Pet Friendly'],
         map: require('../../assets/images/map1.png'),
       },
       {
@@ -83,9 +83,9 @@ export const listings = [
         price: '$3000/month',
         date_range: 'June 1 - August 30',
         host: 'Madeleine',
-        profilepic: require('../../assets/images/profilepic1.png'),
+        profilepic: require('../../assets/images/profilepic6.png'),
         subway: require('../../assets/images/subway1.png'),
-        amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+        amenities: ['Rootop Access', 'In-Unit Laundry'],
         map: require('../../assets/images/map1.png'),
       },
       {
@@ -97,9 +97,9 @@ export const listings = [
         price: '$2700/month',
         date_range: 'May 30 - August 30',
         host: 'Luciana',
-        profilepic: require('../../assets/images/profilepic1.png'),
+        profilepic: require('../../assets/images/profilepic7.jpeg'),
         subway: require('../../assets/images/subway1.png'),
-        amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+        amenities: ['Wifi Included', 'Doorman', 'Pet Friendly'],
         map: require('../../assets/images/map1.png'),
       },
       {
@@ -109,11 +109,11 @@ export const listings = [
         neighborhood: 'CENTRAL HARLEM',
         bed_bath: '1 bed : 1 bath',
         price: '$2100/month',
-        profilepic: require('../../assets/images/profilepic1.png'),
+        profilepic: require('../../assets/images/profilepic8.jpeg'),
         date_range: 'June 1 - September 30',
         host: 'Jane',
         subway: require('../../assets/images/subway1.png'),
-        amenities: ['Wifi', 'Gym', 'Laundry', 'Parking'],
+        amenities: [ 'Gym', 'In-Unit Laundry', 'Parking', 'Pet Friendly'],
         map: require('../../assets/images/map1.png'),
       },
       {
@@ -123,11 +123,11 @@ export const listings = [
         neighborhood: 'CHELSEA',
         bed_bath: '2 bed : 2 bath',
         price: '$3500/month',
-        profilepic: require('../../assets/images/profilepic1.png'),
+        profilepic: require('../../assets/images/profilepic9.jpeg'),
         date_range: 'June 30 - July 15',
-        host: 'Madeleine',
+        host: 'Ethan',
         subway: require('../../assets/images/subway123.png'),
-        amenities: ['Wifi'],
+        amenities: ['Wifi Included'],
         map: require('../../assets/images/map9.png'),
       }
 
